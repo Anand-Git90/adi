@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Gallery</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      margin: 10px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      width: 250px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      border-radius: 8px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2e7d32;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #ff5722;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #e64a19;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="card">
+      <img src="https://b.zmtcdn.com/data/pictures/8/18258758/ffc009f9ce5caa596d8a5764c74373cf.jpg" alt="Pizza" height="200px" width="100%">
+      <h3>Pizza</h3>
+      <p class="price">₹199</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1309352410/photo/cheeseburger-with-tomato-and-lettuce-on-wooden-board.jpg?s=612x612&w=0&k=20&c=lfsA0dHDMQdam2M1yvva0_RXfjAyp4gyLtx4YUJmXgg=" alt="Burger" height="200px" width="100%">
+      <h3>Burger</h3>
+      <p class="price">₹149</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuUhCMBZX2cIaWe40jx7EWQ6PtHPXzYA6o9A&s" alt="Momos" height="200px" width="100%">
+      <h3>Momos</h3>
+      <p class="price">₹99</p>
+      <button>Buy Now</button>
+    </div>
+
+  </div>
+</body>
+</html>
